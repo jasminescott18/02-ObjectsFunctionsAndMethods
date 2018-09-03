@@ -70,7 +70,7 @@ def hypotenuse(a,b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# COMPLETED: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -87,7 +87,7 @@ def two_turtles(color,thickness):
     window.close_on_mouse_click()
 ###############################################################################
 #
-# TODO: 5.
+# COMPLETED: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
