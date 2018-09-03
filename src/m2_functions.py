@@ -22,11 +22,11 @@ import rosegraphics as rg
 import math
 
 def main():
-   print(hypontenuse(5,12))
+   print(hypotenuse(5,12))
 
-def hypontenuse(a,b):
-    return (a^2+b^2)
-main()
+
+def hypotenuse(a,b):
+    return math.sqrt((a * a)+(b * b))
 
 ###############################################################################
 #
