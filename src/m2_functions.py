@@ -25,7 +25,7 @@ def main():
    print(hypotenuse(5,12))
 
    two_turtles('blue',25)
-    
+
 
 
 def hypotenuse(a,b):
@@ -78,10 +78,11 @@ def two_turtles(color,thickness):
     window = rg.TurtleWindow()
     bobbyturtle = rg.SimpleTurtle()
     bobbyturtle.pen = rg.Pen('green',thickness)
-
     bobbyturtle.forward(100)
 
-
+    sallyturtle = rg.SimpleTurtle()
+    sallyturtle.pen = rg.Pen(color,5)
+    sallyturtle.backward(100)
 
     window.close_on_mouse_click()
 ###############################################################################
