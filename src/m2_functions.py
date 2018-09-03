@@ -24,13 +24,16 @@ import math
 def main():
    print(hypotenuse(5,12))
 
+   two_turtles('blue',25)
+    
+
 
 def hypotenuse(a,b):
     return math.sqrt((a * a)+(b * b))
 
 ###############################################################################
 #
-# TODO: 3a.  Define a function immediately blow this _TODO_.
+# COMPLETED: 3a.  Define a function immediately blow this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -38,7 +41,7 @@ def hypotenuse(a,b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# COMPLETED: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -71,8 +74,16 @@ def hypotenuse(a,b):
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+def two_turtles(color,thickness):
+    window = rg.TurtleWindow()
+    bobbyturtle = rg.SimpleTurtle()
+    bobbyturtle.pen = rg.Pen('green',thickness)
+
+    bobbyturtle.forward(100)
 
 
+
+    window.close_on_mouse_click()
 ###############################################################################
 #
 # TODO: 5.
