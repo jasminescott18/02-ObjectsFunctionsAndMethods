@@ -19,8 +19,10 @@ def main():
     # When the _TODO_s ask you to test YOUR code, comment-out the following
     # two statements and add calls to   better_draw_circles   et al as needed.
     # -------------------------------------------------------------------------
-    draw_circles(rg.Point(100, 50))
-    draw_circles(rg.Point(-200, 0))
+    # draw_circles(rg.Point(100, 50))
+    # draw_circles(rg.Point(-200, 0))
+    better_draw_circles(rg.Point(40, 20), 30)
+    better_draw_circles(rg.Point(-70, 30), 40)
 
     window.update()
     window.close_on_mouse_click()
@@ -88,7 +90,7 @@ def draw_circles(point):
 
 ###############################################################################
 #
-# TODO: 3a.
+# COMPLETED: 3a.
 #   The function
 #       better_draw_circles
 #   defined below this _TODO_ starts out exactly the same as the code for
@@ -111,15 +113,15 @@ def draw_circles(point):
 #   just as in   draw_circles.  But if that parameter is given the value 3,
 #   then the circles should have radii:  3  6  9  12  15  18 ..., respectively.
 #
-# TODO: 3b.
+# COMPLETED: 3b.
 #   In   main  at the place indicated, comment-out the two existing calls
 #   to  draw_circles  and add at least two calls to the improved
 #   better_draw_circles  function, to TEST that your modified code is correct
 #   and does indeed allow for different amounts by which the radii can vary.
 #
 # ###############################################################################
-#Ask about this
-def better_draw_circles(point):
+
+def better_draw_circles(point, radii):
     """
     Starts out the same as the   draw_circles   function defined ABOVE.
     You Will make it an IMPROVED, MORE POWERFUL function per the above _TODO_.
@@ -139,7 +141,7 @@ def better_draw_circles(point):
         turtle.left(90)
 
         turtle.pen_down()
-        turtle.draw_circle(15 * k)  # Radius 15, 30, 45, 60, ...
+        turtle.draw_circle(radii * k)  # Radius 15, 30, 45, 60, ...
 
 
 ###############################################################################
