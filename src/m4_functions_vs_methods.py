@@ -139,6 +139,7 @@ def try_methods():
     """
     trunks = rg.SimpleTurtle()
     trunks.pen = rg.Pen('brown', 5)
+
     trunks.forward(150)
     trunks.left(90)
     trunks.forward(50)
@@ -159,12 +160,12 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     # Ask about this
-    jump_and_move_turtle(200,100,300,30)
-    jump_and_move_turtle(100,200,0,0)
-    jump_and_move_turtle(-50,50,100,100)
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # COMPLETED: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -207,8 +208,29 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+    bulla = rg.SimpleTurtle()
+    bulla.pen = rg.Pen('blue', 5)
+
+    bulla.backward(150)
+    bulla.speed = 1
+    draw_many_squares(bulla, 2, 100, 30)
+
+    bulla.speed = 5
+    bulla.pen = rg.Pen('red', 5)
+    draw_many_squares(bulla, 10, 50, 15)
+
+    bulla.speed = 200
+    bulla.pen = rg.Pen('red', 35)
+    draw_many_squares(bulla, 8, 300, 60)
+
+    bulla.pen = rg.Pen('black', 3)
+    bulla.backward(200)
+
+    bulla.draw_circle(30)
+    bulla.draw_square(50)
+
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # COMPLETED: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
