@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 
 ###############################################################################
 #
-# TODO: 2.
+# COMPLETED: 2.
 #   With your instructor, READ the file   methods_vs_functions.txt
 #   in this project, ASKING QUESTIONS as needed to understand its contents.
 #   After you have done so, mark this _TODO_ as DONE
@@ -101,7 +101,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 ###############################################################################
 #
-# TODO: 3.
+# COMPLETED: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -137,6 +137,13 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    trunks = rg.SimpleTurtle()
+    trunks.pen = rg.Pen('brown',5)
+    trunks.forward(150)
+    trunks.left(90)
+    trunks.forward(50)
+    trunks.backward(100)
+    
     ###########################################################################
     # TODO: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
