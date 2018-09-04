@@ -138,14 +138,14 @@ def try_methods():
       -- backward  100 units
     """
     trunks = rg.SimpleTurtle()
-    trunks.pen = rg.Pen('brown',5)
+    trunks.pen = rg.Pen('brown', 5)
     trunks.forward(150)
     trunks.left(90)
     trunks.forward(50)
     trunks.backward(100)
-    
+
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # COMPLETED: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
 
@@ -158,6 +158,11 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+    # Ask about this
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
+
     ###########################################################################
     # TODO: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
