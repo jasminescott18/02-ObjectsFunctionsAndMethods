@@ -26,7 +26,7 @@ def main():
     window.close_on_mouse_click()
 
 
-###############################################################################
+##############################################################################
 #
 # COMPLETED: 2.
 #   First, RUN this program.  You will see that it draws concentric circles
