@@ -219,7 +219,7 @@ def try_methods_and_functions():
     bulla.pen = rg.Pen('red', 5)
     draw_many_squares(bulla, 10, 50, 15)
 
-    bulla.speed = 200
+    bulla.speed = 100
     bulla.pen = rg.Pen('red', 35)
     draw_many_squares(bulla, 8, 300, 60)
 
