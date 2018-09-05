@@ -51,7 +51,6 @@ def main():
         vegeta.pen_down()
         vegeta.draw_circle(4 * k)
 
-
     window.update()
     window.close_on_mouse_click()
 
