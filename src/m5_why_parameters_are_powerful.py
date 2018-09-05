@@ -11,7 +11,7 @@ def main():
     """
     Calls the other functions in this module to test and/or demonstrate them.
     """
-    drawing_speed = 10  # Bigger numbers mean faster drawing
+    drawing_speed = 3 # Bigger numbers mean faster drawing
     window = rg.TurtleWindow()
     window.tracer(drawing_speed)
 
@@ -23,9 +23,34 @@ def main():
     # draw_circles(rg.Point(-200, 0))
     # better_draw_circles(rg.Point(40, 20), 30)
     # better_draw_circles(rg.Point(-70, 30), 40)
-    even_better_draw_circles(rg.Point(40, 20),15,20,'red', 5)
+    # even_better_draw_circles(rg.Point(40, 20),15,20,'red', 5)
+    # even_better_draw_circles(rg.Point(300, -100),15,3,'blue', 7)
 
-    even_better_draw_circles(rg.Point(300, -100),15,3,'blue', 7)
+    vegeta = rg.SimpleTurtle()
+    vegeta.speed = 1
+
+    for k in range(7):
+
+        vegeta.pen_up()
+        vegeta.pen = rg.Pen('blue', '5')
+
+        vegeta.left(90)
+        vegeta.forward(30)
+        vegeta.left(45)
+
+        vegeta.pen_down()
+        vegeta.draw_circle(30*k)
+
+        vegeta.pen = rg.Pen('red', '10')
+        vegeta.pen_up()
+
+        vegeta.right(90)
+        vegeta.forward(30)
+        vegeta.right(45)
+
+        vegeta.pen_down()
+        vegeta.draw_circle(4 * k)
+
 
     window.update()
     window.close_on_mouse_click()
@@ -149,7 +174,7 @@ def better_draw_circles(point, radii):
 
 ###############################################################################
 #
-# TODO: 4a.
+# COMPLETED: 4a.
 #   In the previous _TODO_, you made a MORE POWERFUL version
 #   of   draw_circles   by introducing a PARAMETER for the amount
 #   by which the radii of the concentric circles increase.
@@ -171,7 +196,7 @@ def better_draw_circles(point, radii):
 #   to the body of the   even_better_draw_circles   function defined below.
 #   Then add parameters and modify the code to make them work!
 #
-# TODO: 4b.
+# COMPLETED: 4b.
 #   In   main  at the place indicated, comment-out the existing calls
 #   to  better_draw_circles  and add at least two calls to the improved
 #   even_better_draw_circles  function, to TEST that your modified code is
@@ -201,7 +226,7 @@ def even_better_draw_circles(point, radii, circles, clr, thic):
 
 
 ###############################################################################
-# TODO: 5.
+# COMPLETED: 5.
 #
 # Finally, comment-out the existing calls to  even_better_draw_circles  and
 # add code in   main  to draw various circles that form a BEAUTIFUL picture!
